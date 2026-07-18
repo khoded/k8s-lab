@@ -1,0 +1,8 @@
+# Kubernetes credentials
+.kube/
+cluster/kubeconfigs/
+cluster/merged/
+cluster/backups/
+*.kubeconfig
+*kubeconfig*.yaml
+
