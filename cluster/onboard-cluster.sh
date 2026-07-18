@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-CLUSTER_HOME="${HOME}/cluster"
+CLUSTER_HOME="${HOME}/k8s-lab/cluster"
 CONFIG_DIR="${CLUSTER_HOME}/kubeconfigs"
 MERGED_DIR="${CLUSTER_HOME}/merged"
 BACKUP_DIR="${CLUSTER_HOME}/backups"
