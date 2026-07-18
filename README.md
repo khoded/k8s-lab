@@ -165,32 +165,17 @@ A kubeconfig downloaded from Rancher may contain multiple contexts, e.g.:
 - `local`  
 - `rancher`
 
-or:
-
-- `zeiss-corp-macbook-vm`  
-- `rancher`
 
 - The `rancher` context points to the Rancher API endpoint.
 - The actual Kubernetes cluster context is normally:
   - `local` for the Rancher management cluster, or
-  - a downstream cluster name such as `zeiss-corp-macbook-vm`.
+  - a downstream cluster name such as `remote-vm`.
 
-The onboarding script should import **only** the actual Kubernetes cluster context and exclude the generic `rancher` context.
-
-Otherwise, duplicate contexts can appear:
-
-- `local`
-- `rancher`
-- `rancher-management-local`
-- `rancher-management-rancher`
 
 Desired result:
 
 - `rancher-management`
-- `zeiss-corp-macbook-vm`
-- `development`
-- `staging`
-- `production`
+
 
 ---
 
